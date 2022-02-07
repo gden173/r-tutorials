@@ -1,0 +1,4 @@
+^renv$
+^renv\.lock$
+^r-tutorials\.Rproj$
+^\.Rproj\.user$
