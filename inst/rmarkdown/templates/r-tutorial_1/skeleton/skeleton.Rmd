@@ -1,0 +1,78 @@
+---
+title: "r-tutorial 01"
+author:
+  - name: Stephen Thomas Dennis 
+    affiliation: The University of Melbourne
+date: "`r format(Sys.Date(), format = '%d-%m-%Y')`"
+output: 
+    prettydoc::html_pretty:
+      theme: leonids
+      highlight: github
+      toc: true
+      toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, 
+                      warning = FALSE, 
+                      error = FALSE, 
+                      message = FALSE)
+
+
+
+# Load the necessary libraries
+pkgs <- c(
+  'tidyverse', # For data analysis and visualisation 
+  'here' # For directory management
+  )
+sapply(pkgs, library, character.only = TRUE)
+```
+
+## Importing Data 
+
+> Install from github 
+
+```{r, load-data}
+# Load data into a dataframe
+data_url <- ""
+data <- readr::read_csv(data_url)
+
+# Store a local copy of the data so we don't have to download it in the future 
+if (!file.exists(here('data', 'tutorial-01.csv'))) {
+  readr::write_csv(data, here('data', 'tutorial-01.csv'))
+}
+
+```
+
+
+## Cleaning Data (Analysing)
+
+> look for anything interesting
+
+```{r, analyse-data}
+# Clean and analyse the data 
+```
+
+
+
+## Visualise Data 
+> using ggplot and base R
+
+```{r, visualise}
+# Visualise the data graphically 
+```
+
+
+
+## Report 
+
+> report interesting findings 
+
+```{r, report}
+# Report the major findings 
+```
+
+
+
+## References 
+> cite the date and packages used 

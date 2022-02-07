@@ -1,0 +1,4 @@
+name: r-tutorial_1
+description: >
+   Rmarkdown template for the first r-tutorial
+create_dir: FALSE
